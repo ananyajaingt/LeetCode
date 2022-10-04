@@ -1,0 +1,24 @@
+class Solution(object):
+    def wateringPlants(self, plants, capacity):
+        original_capacity = capacity
+        steps = 0
+        for i in range(0, len(plants)):
+            if capacity < plants[i]:
+                steps += i
+                capacity = original_capacity
+                steps += i + 1
+                capacity -= plants[i]
+
+
+            elif capacity >= plants[i]:
+                capacity -= plants[i]
+                steps += 1
+
+        return steps
+
+
+ob1 = Solution()
+
+plants = [2, 2, 3, 3]
+capacity = 5
+wp1 = ob1.wateringPlants(plants, capacity)
