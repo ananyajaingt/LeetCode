@@ -14,7 +14,6 @@ class Solution(object):
                     arr[l] = 0
                     l -= 1
                     break
-
                 d += 1
 
         last = l - d
