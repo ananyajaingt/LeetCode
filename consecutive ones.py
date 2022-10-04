@@ -4,7 +4,6 @@ class Solution(object):
 
         c = 0
         maxc= 0
-
         for i in nums:
             if i == 1:
                 c += 1
