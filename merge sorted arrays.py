@@ -15,6 +15,5 @@ class Solution(object):
         nums1.sort()
         print(nums1)
 
-
 ob1 = Solution()
 ob_merge = ob1.merge(nums1=[1, 2, 3, 0, 0, 0], m=3, nums2=[2, 5, 6], n=3)
