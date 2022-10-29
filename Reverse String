@@ -1,0 +1,10 @@
+class Solution(object):
+    def reverseString(self, s):
+        y = s[:]
+        count = 0
+        for i in range(-1,-(len(s)+1), -1):
+            s[count] = y[i]
+            count += 1
+    
+ob1 = Solution()
+x = ob1.reverseString(["h","e","l","l","o"])
